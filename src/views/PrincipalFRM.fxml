@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" styleClass="acpPrincipal" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MenuBar>
+               <menus>
+                  <Menu fx:id="mnuCadastros" mnemonicParsing="false" text="Cadastros">
+                     <items>
+                        <MenuItem fx:id="mniUsuarios" mnemonicParsing="false" onAction="#mniUsuarios_Click" text="Usuários" />
+                        <MenuItem fx:id="mniProdutos" mnemonicParsing="false" onAction="#mniProdutos_Click" text="Produtos" />
+                        <MenuItem fx:id="mniCategorias" mnemonicParsing="false" onAction="#mniCategorias_Click" text="Categorias" />
+                        <MenuItem fx:id="mniEmpresas" mnemonicParsing="false" onAction="#mniEmpresas_Click" text="Empresas" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="mnuMovimentacoes" mnemonicParsing="false" text="Movimentações">
+                     <items>
+                        <MenuItem fx:id="mniRfid" mnemonicParsing="false" onAction="#mniRfid_Click" text="RFID" />
+                        <MenuItem fx:id="mniEntrada_produtos" mnemonicParsing="false" onAction="#mniEntrada_produtos_Click" text="Entrada de Produtos" />
+                        <MenuItem fx:id="mniSaida_produtos" mnemonicParsing="false" onAction="#mniSaida_produtos_Click" text="Saída de Produtos" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="mnuConsultas" mnemonicParsing="false" text="Consultas">
+                    <items>
+                      <MenuItem fx:id="mniTabela_produtos" mnemonicParsing="false" onAction="#mniTabela_produtos_Click" text="Produtos" />
+                        <MenuItem fx:id="mniTabela_produtos_rfid" mnemonicParsing="false" onAction="#mniTabela_produtos_rfid_Click" text="Produtos com RFID" />
+                    </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <AnchorPane prefHeight="75.0" prefWidth="900.0" styleClass="barPrincipal">
+               <children>
+                  <HBox AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="10.0">
+                     <children>
+                        <Button fx:id="btnUsuarios" mnemonicParsing="false" onAction="#mniUsuarios_Click" prefHeight="55.0" prefWidth="55.0" styleClass="btnPrincipal">
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/icons/icnUsuarios.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <tooltip>
+                              <Tooltip text="Usuários" />
+                           </tooltip>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnProdutos" mnemonicParsing="false" onAction="#mniProdutos_Click" prefHeight="55.0" prefWidth="55.0" styleClass="btnPrincipal">
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/icons/icnProdutos.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <tooltip>
+                              <Tooltip text="Produtos" />
+                           </tooltip>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnRfid" mnemonicParsing="false" onAction="#mniRfid_Click" prefHeight="55.0" prefWidth="55.0" styleClass="btnPrincipal">
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/icons/icnRfid.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <tooltip>
+                              <Tooltip text="RFID" />
+                           </tooltip>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnEntrada_produtos" mnemonicParsing="false" onAction="#mniEntrada_produtos_Click" prefHeight="55.0" prefWidth="55.0" styleClass="btnPrincipal">
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/icons/icnEntrada.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <tooltip>
+                              <Tooltip text="Entrada de Produtos" />
+                           </tooltip>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btnSaida_produtos" mnemonicParsing="false" onAction="#mniSaida_produtos_Click" prefHeight="55.0" prefWidth="55.0" styleClass="btnPrincipal">
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/icons/icnSaida.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <tooltip>
+                              <Tooltip text="Saída de Produtos" />
+                           </tooltip>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="25.0" styleClass="barRodape" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label layoutX="97.0" layoutY="4.0" text="© Copyrigth 2016 - R2D2 Estoque" textFill="#dbdbdb" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="4.0" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="74.0" fitWidth="314.0" layoutX="395.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="60.0" AnchorPane.rightAnchor="50.0">
+         <image>
+            <Image url="/icons/icnLogo_r2d2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

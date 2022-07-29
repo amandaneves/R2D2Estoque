@@ -1,0 +1,306 @@
+.root {
+	-branco-100: #FFFFFF;
+	-branco-150: #FEFEFE;
+	-azul-100: #DEE4F5;
+	-azul-150: #E3EDF4;
+	-azul-200: #D6DDF3;
+	-azul-250: #C8D2F0;
+	-azul-300: #BCCAED;
+	-azul-350: #B0C0EA;
+	-azul-400: #9AAEE4;
+	-azul-450: #89A2E0;
+	-azul-500: #7B96DD;
+	-azul-550: #6D8BDA;
+	-azul-600: #6181D6;
+	-azul-650: #5175D2;
+	-azul-700: #4268CE;
+	-azul-750: #335BC6;
+	-azul-800: #2F54B7;
+	-azul-850: #2B4EAA;
+	-azul-900: #27479C;
+	-azul-950: #24428E;
+	-azul-1000: #223E86;
+	-azul-1050: #1D3574;
+	-azul-1100: #192F66;
+	-azul-1150: #16295A;
+	-cinza-100: #E0E3E6;
+	-cinza-150: #DDDDDD;
+	-cinza-200: #D5D5D5;
+    -cinza-250: #CFCFCF;
+    -cinza-300: #C5C5C5;
+    -cinza-350: #757575;
+    -cinza-400: #555555;
+}
+
+.menu-bar {
+    -fx-background-color: -azul-1050;
+    -fx-min-height: 46;
+    -fx-font-size: 13;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.menu {
+    -fx-min-height: 48;
+}
+
+.menu .label {
+    -fx-font-family: "Segoe UI";
+    -fx-text-fill: -branco-150;
+}
+
+.context-menu {
+    -fx-background-color: -azul-100;
+    -fx-text-fill: -branco-150;
+}
+
+.menu-button:hover {
+    -fx-background-color: -azul-1150;
+}
+
+.menu:showing, .menu-button:pressed {
+    -fx-background-color: -azul-1150;
+}
+
+.menu-item {
+    -fx-border-color: -branco-150;
+}
+
+.menu-item .label {
+    -fx-text-fill: -cinza-400;
+    -fx-font-family: "Segoe UI";
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: -cinza-400;
+}
+
+.menu-item:focused {
+    -fx-background: -branco-150;
+    -fx-border-color: -azul-1000;
+}
+
+.menu-item:hover {
+    -fx-background: -branco-150;
+    -fx-background-color: -azul-250;
+    -fx-border-color: -azul-1000;
+}
+
+.context-menu {
+    -fx-background-color: -branco-150;
+}
+
+.barPrincipal {
+    -fx-background-color: rgba(255, 255, 255, 0.5);
+    -fx-border-color: -azul-350;
+}
+
+.acpPrincipal {
+    -fx-background-image: url('/resources/FundoR2D2.png');
+}
+
+.barRodape {
+    -fx-background-color: -azul-1100;
+}
+
+.lbl {
+    -fx-font-size: 12px;
+    -fx-font-family: "Segoe UI";
+    -fx-text-fill: -cinza-400;
+}
+
+#acpTopo, #acpRodape, .acpBotoes, .acpBarraTelaPesquisa {
+    -fx-background-color: -cinza-100;
+    -fx-border-color: -cinza-250;
+}
+
+#acpMeio, .acpDados {
+    -fx-background-color: -branco-150;
+}
+
+.acpFundo_botoes {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+}
+
+.btnPrincipal {
+    -fx-background-color: -azul-1050;
+    -fx-background-radius: 100;
+    -fx-effect: dropshadow(three-pass-box, -azul-1050, 4, 0, 0, 0);
+    -fx-cursor: hand;
+}
+
+.btnPrincipal:hover {
+    -fx-effect: dropshadow(three-pass-box, -azul-1100, 2, 0, 0, 0);
+}
+
+.btnPrincipal:pressed {
+    -fx-background-color: -azul-1150;
+}
+
+TextField, PasswordField, TextArea, ComboBox {
+    -fx-font-size: 12px;
+    -fx-text-fill: -cinza-400;
+    -fx-max-height: 25px;
+    -fx-highlight-fill: -cinza-300;
+    -fx-highlight-text-fill: -cinza-350;
+    -fx-background-color: -branco-150;
+    -fx-border-color: -cinza-300;
+    -fx-border-radius: 2px;
+}
+
+TextField:disabled, PasswordField:disabled, ComboBox:disabled {
+    -fx-opacity: 0.8;
+    -fx-font-size: 12px;
+    -fx-text-fill: -cinza-350;
+    -fx-background-color: -branco-150;
+    -fx-border-color: -cinza-150;
+    -fx-border-radius: 1px;
+}
+
+TextArea .scroll-pane:disabled {
+    -fx-opacity: 1.0;
+}
+
+ComboBox .list-cell, ComboBox .list-cell {
+    -fx-text-fill: -cinza-400;
+    -fx-background-color: -branco-150;
+}
+
+ComboBox .list-cell:hover {
+    -fx-background-color: -azul-250;
+}
+
+TextField:hover, TextArea:hover, PasswordField:hover, ComboBox:hover {
+    -fx-border-color: -azul-500;
+}
+
+TextField:focused, TextArea:focused, PasswordField:focused, ComboBox:focused {
+    -fx-border-color: -azul-850;
+}
+
+.tooltip {
+    -fx-background-color: -azul-1050;
+    -fx-background-fills: 2px;
+    -fx-border-color: -azul-1000;
+    -fx-border-radius: 4px;
+    -fx-border-insets: 0, 2px;
+    -fx-padding: 6, 5, 6, 5;
+    -fx-opacity: 0.9;
+    -fx-font-size: 13px;
+    -fx-text-fill: -branco-150;
+    -fx-font-family: "Segoe UI";
+}
+
+.btn {
+    -fx-text-fill: -cinza-400;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.btn:hover, .btn:focused {
+    -fx-border-color: -azul-500;
+}
+
+.btn:pressed {
+    -fx-background-color: -azul-200; /*rgba(162,196,223,0.6);*/
+    -fx-border-color: -azul-850;
+}
+
+.check-box {
+    -fx-background-color: transparent;
+    -fx-text-fill: -cinza-400;
+}
+
+.check-box .box {
+    -fx-background-radius: 1px;
+    -fx-background-color: transparent;
+    -fx-border-color: -cinza-300;
+}
+
+.check-box .box:hover, .check-box .box:focused {
+    -fx-border-color: -azul-500;
+}
+
+.check-box:pressed .box, .check-box:focused .box {
+    -fx-border-color: -azul-750;
+}
+
+.check-box:selected .mark {
+    -fx-border-color: -azul-900;
+}
+
+.radio-button .radio {
+    -fx-border-radius: 1em;
+    -fx-background-color: transparent;
+    -fx-border-color: -cinza-300;
+}
+
+.radio-button:hover .radio {
+    -fx-border-color: -azul-500;
+    -fx-background-color: transparent;
+    -fx-border-radius: 1em;
+}
+
+.radio-button:pressed .radio, .radio-button:focused .radio {
+    -fx-border-radius: 1em;
+    -fx-background-color: transparent;
+    -fx-border-color: -azul-750;
+}
+
+.radio-button:selected .radio {
+    -fx-border-radius: 1em;
+    -fx-border-color: -azul-900;
+}
+
+.radio-button:selected .dot {
+    -fx-background-color: transparent, -azul-600;
+    -fx-background-insets: 0 0 -1 0, 0;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: -azul-400, -branco-150, -branco-150;
+    -fx-background-insets: 0px, 0px 0px 1px 0px, 1px;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: -branco-150;
+    -fx-background-insets: 0 1 0 1, 0, 0;
+}
+
+.tab .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: -cinza-400;
+    -fx-font-size: 12px;
+}
+
+.tab:selected .tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: -cinza-400;
+}
+
+.tab-pane .tab-header-area .headers-region .tab:selected {
+    -fx-background-color: -azul-800, -azul-800, -branco-150;
+    -fx-background-insets: 0 1 1 0, 1 2 0 1, 2 3 0 2;
+}
+
+.tab-pane .tab-header-area .headers-region .tab {
+    -fx-background-color: -azul-400, -azul-400, -branco-150;
+    -fx-background-insets: 0 1 1 0, 1 1 0 1, 1 2 1 1;
+}
+
+.tab-pane:focused .tab-header-area .headers-region .tab:selected .focus-indicator {
+    -fx-border-width: 0.5, 0.5;
+    -fx-border-color: transparent, transparent;
+    -fx-border-insets: -3 -3 -5 -4, -1 -1 -4 -2;
+    -fx-border-radius: 2, 1;
+}
+
+.table-view {
+    -fx-border-color: -cinza-250;
+}
+
+.table-view:focused, .table-view:pressed {
+    -fx-border-color: -azul-800;
+}
+
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="R2D2Estoque.jnlp">
+  <information>
+    <title>R2D2Estoque</title>
+    <vendor>Projeto Integrador</vendor>
+    <description>R2D2Estoque</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="R2D2Estoque.jar" size="3208843" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="application.Main"  name="R2D2Estoque" />
+  <update check="background"/>
+</jnlp>

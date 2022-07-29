@@ -1,0 +1,43 @@
+<html><head>
+  <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'R2D2Estoque.jnlp'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedR2D2Estoque_id() {
+        dtjava.embed(
+            {
+                id : 'R2D2Estoque_id',
+                url : 'R2D2Estoque.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '600',
+                height : '400'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedR2D2Estoque_id);
+</script>
+
+</head><body>
+<h2>Test page for <b>R2D2Estoque</b></h2>
+  <b>Webstart:</b> <a href='R2D2Estoque.jnlp' onclick="return launchApplication('R2D2Estoque.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>

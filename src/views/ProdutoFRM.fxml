@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="250.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="acpTopo" prefHeight="60.0" prefWidth="406.0" style="-fx-background-color: #EAEAEA;">
+         <children>
+            <HBox layoutX="15.0" layoutY="15.0" prefHeight="41.0" prefWidth="180.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="7.0">
+               <children>
+                  <Button fx:id="btnNovo" contentDisplay="TOP" graphicTextGap="2.0" mnemonicParsing="false" onAction="#btnNovo_Click" prefHeight="50.0" prefWidth="50.0" styleClass="btn" text="Novo">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnEditar" contentDisplay="TOP" graphicTextGap="2.0" mnemonicParsing="false" onAction="#btnEditar_Click" prefHeight="50.0" prefWidth="50.0" styleClass="btn" text="Editar">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnSalvar" contentDisplay="TOP" graphicTextGap="2.0" mnemonicParsing="false" onAction="#btnSalvar_Click" prefHeight="50.0" prefWidth="50.0" styleClass="btn" text="Salvar">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="7.0">
+               <children>
+                  <Button fx:id="btnExcluir" contentDisplay="TOP" graphicTextGap="2.0" mnemonicParsing="false" onAction="#btnExcluir_Click" prefHeight="55.0" prefWidth="50.0" styleClass="btn" text="Excluir">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnLimpar" contentDisplay="TOP" graphicTextGap="2.0" mnemonicParsing="false" onAction="#btnLimpar_Click" prefHeight="55.0" prefWidth="50.0" styleClass="btn" text="Limpar">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                     <padding>
+                        <Insets left="2.0" right="2.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="acpDados" prefHeight="185.0" prefWidth="435.0">
+         <children>
+            <Label layoutX="10.0" layoutY="10.0" styleClass="lbl" text="Código RFID" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="10.0">
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="txtRfid" layoutX="24.0" layoutY="43.0" prefHeight="25.0" prefWidth="100.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="35.0" />
+            <Label styleClass="lbl" text="Descrição" AnchorPane.leftAnchor="123.0" AnchorPane.topAnchor="10.0">
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="txtDescricao" layoutX="14.0" layoutY="33.0" prefHeight="25.0" prefWidth="102.0" AnchorPane.leftAnchor="123.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="35.0" />
+            <Label layoutX="15.0" layoutY="60.0" styleClass="lbl" text="Categoria" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="65.0">
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </Label>
+            <ComboBox fx:id="cbxCategoria" layoutX="14.0" layoutY="88.0" prefHeight="25.0" prefWidth="275.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="133.0" AnchorPane.topAnchor="90.0" />
+            <Label layoutX="335.0" layoutY="65.0" styleClass="lbl" text="Inventário" AnchorPane.leftAnchor="315.0" AnchorPane.topAnchor="65.0">
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="txtDt_inventario" alignment="CENTER" layoutX="231.0" layoutY="90.0" prefHeight="25.0" prefWidth="103.0" AnchorPane.leftAnchor="315.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="90.0" />
+            <Label layoutX="10.0" layoutY="120.0" styleClass="lbl" text="Preço de Custo" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="120.0">
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="txtPreco_custo" alignment="CENTER_RIGHT" layoutX="23.0" layoutY="143.0" prefWidth="90.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="145.0" />
+            <Label layoutX="111.0" layoutY="120.0" styleClass="lbl" text="Preço Médio" AnchorPane.leftAnchor="111.0" AnchorPane.topAnchor="120.0">
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="txtPreco_medio" alignment="CENTER_RIGHT" layoutX="111.0" layoutY="145.0" prefWidth="90.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="111.0" AnchorPane.topAnchor="145.0" />
+            <Label layoutX="207.0" layoutY="120.0" styleClass="lbl" text="Preço de Venda" AnchorPane.leftAnchor="207.0" AnchorPane.topAnchor="120.0">
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="txtPreco_venda" alignment="CENTER_RIGHT" layoutX="207.0" layoutY="145.0" prefWidth="90.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="207.0" AnchorPane.rightAnchor="133.0" AnchorPane.topAnchor="145.0" />
+            <AnchorPane layoutX="310.0" layoutY="117.0" prefHeight="49.0" prefWidth="105.0" style="-fx-border-color: #DEDEDE;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="315.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="120.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="19.0" layoutY="3.0" styleClass="lbl" text="Estoque Atual" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="1.0">
+                     <padding>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="lblEstoque_atual" alignment="CENTER" styleClass="lbl" text="0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0">
+                     <padding>
+                        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

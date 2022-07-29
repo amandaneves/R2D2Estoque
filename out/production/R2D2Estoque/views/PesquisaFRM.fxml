@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="txtPesquisa" layoutX="14.0" layoutY="21.0" promptText="Pesquisar..." AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+      <Button fx:id="btnSelecionar" layoutX="333.0" layoutY="211.0" mnemonicParsing="false" onAction="#btnSelecionar_Click" text="Selecionar" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="15.0" />
+      <ListView fx:id="lsvDados_pesquisa" layoutX="15.0" layoutY="40.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="50.0" />
+   </children>
+</AnchorPane>
