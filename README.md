@@ -12,11 +12,15 @@ Sistema desenvolvido por mim, logo criada por Hericlis Martins.
 **Passo a passo para execução do projeto**:
 - Rodar o Script r2d2estoque, e depois o admin que estão no package bd.
 - Irá conectar no endereço padrão (caso tenha algum dado diferente em seu ambiente é só trocar na classe util/Conexao.java):
-Host: localhost
-Banco: r2d2estoque
-Porta: 3306
-Usuario: root
-Senha: password
+  Host: localhost
+
+  Banco: r2d2estoque
+
+  Porta: 3306
+
+  Usuario: root
+
+  Senha: password
 - Ao abrir a tela de login, é só logar com o que foi criado pelo script admin. Usuário: admin Senha: admin.
 
 **Java 8, JavaFX, MySQL**.
