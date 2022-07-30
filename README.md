@@ -4,7 +4,7 @@
 
 Grupo: Amanda Neves, Camila Alves, Hericlis Martins, Thiago Nascimento e Victor Trevenzoli.
 
-Desenvolvido por Amanda Neves, logo por Hericlis Martins.
+Desenvolvido por Amanda Neves, logomarca R2D2 Estoque por Hericlis Martins.
 
 A idéia do grupo foi criar um sistema de gerência de estoque, no qual a entrada e saída de produtos fosse por meio de leitura RFID. 
 Então, simulamos a leitura do RFID como um documento que contém os códigos de produtos (documento de teste na raiz do projeto produtos.rfid), e pode ser feito o cadastro de novos produtos, entrada e saída.
